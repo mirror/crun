@@ -1,0 +1,11 @@
+# For a description of the file format, see the Users Guide
+# http://cygwin.com/1.7/cygwin-ug-net/using.html#mount-table
+
+# This is default anyway:
+# none /cygdrive cygdrive binary,posix=0,user 0 0
+
+# Prevent Cygwin from messing with Windows ACLs
+none            /cygdrive   cygdrive   noacl,binary,posix=0,user   0 0
+C:/cygwin/bin   /usr/bin    ntfs       binary,auto,noacl           0 0
+C:/cygwin/lib   /usr/lib    ntfs       binary,auto,noacl           0 0
+C:/cygwin       /           ntfs       override,binary,auto,noacl  0 0

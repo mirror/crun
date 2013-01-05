@@ -1,0 +1,11 @@
+Cygwin Windows Explorer integration: Known errors
+--------------------------------------------------------------------------------
+
+ - Some file names and paths for both the shell scripts and objects that are
+   being dropped onto them are not supported, for instance if they contain
+   single quotes (').
+
+ - Drag&drop support is limited to 8 items. If more than 8 items are being
+   dropped onto a shell script file some of them will be omitted without any
+   feasible way to find out which ones.
+   
